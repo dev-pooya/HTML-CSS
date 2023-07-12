@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تمرین اول</title>
+
+    <!-- استایل های تگ ها،  -->
+
+    <style>
+      h1 {
+        text-transform: capitalize; /* حروف اول هر کلمه بزرگ */
+      }
+      /* در ابتدای انتخابگر کلس از نقطه استفاده میکنیم class */
+      .space {
+        /* یک کلس برای ایجاد فاصله عمودی */
+        width: 100%;
+        height: 5px;
+      }
+      .p-2 {
+        color: rgb(134, 3, 91);
+      }
+      .p-3 {
+        background-color: darkslategrey; /* رنگ پس زمینه*/
+        color: white; /* رنگ متن*/
+        width: 700px; /*عرض*/
+        height: 150px; /* ارتفاع*/
+      }
+      .a-link {
+        color: purple;
+        font-weight: bold;
+        font-size: 20px; /* افزایش  سایز متن*/
+      }
+      .btn-1 {
+        color: white;
+        background-color: #0d6efd;
+        border: none;
+        width: 150px;
+        height: 40px;
+        font-weight: bold; /* ضخامت فونت و متن*/
+        border-radius: 0; /* گردی گوشه ها*/
+      }
+      .btn-2 {
+        color: #0d6efd;
+        border-color: #0d6efd; /* رنگ حاشیه یا همان کادر دور */
+        border-style: solid; /* نوع کادر دور یکپارچه*/
+        background-color: transparent; /* پس زمینه شفاف*/
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+      .btn-3 {
+        color: white;
+        background-color: #0d6efd;
+        border: none;
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+        border-radius: 25px;
+      }
+      .btn-4 {
+        color: #0d6efd;
+        border-color: #0d6efd;
+        background-color: transparent;
+        width: 40px; /* عرض و ارتفاع برابر*/
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%; /* گوشه های کاملا گرد و دایره */
+      }
+      .btn-5 {
+        color: white;
+        border: none;
+        background-color: #0d6efd;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+      }
+      .item-red {
+        color: darkred;
+      }
+      .item-purple {
+        color: darkmagenta;
+      }
+      .avatar {
+        border-radius: 50%;
+        width: 110px;
+      }
+      .has-border {
+        /* عکس با حاشیه*/
+        border-width: 5px;
+        border-style: solid;
+        border-color: #031531;
+      }
+    </style>
+    <!-- پایان استایل ها -->
+  </head>
+  <body>
+    <!-- ایجاد فاصله عمودی با "space"  class  -->
+    <br class="space" />
+    <h1>traninig of the html css class</h1>
+    <br class="space" />
+    <h2>1. create some paragraph</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, omnis architecto quisquam temporibus,
+      odit dolores eum doloremque quae doloribus molestiae voluptate esse nisi ullam asperiores id alias
+      provident facilis. Minima accusantium ipsum similique doloribus molestias! Suscipit ad numquam quod
+      ipsam sequi, quia mollitia officiis, nemo doloribus ut odit laboriosam laborum.
+    </p>
+    <h2>2. create paragraph with this color code: "rgb(134, 3, 91) "</h2>
+    <p class="p-2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a rem ut laudantium modi quisquam
+      consequatur, nesciunt itaque fugit exercitationem iste non eligendi voluptas odit alias officiis
+      voluptate eum autem distinctio. Officiis iusto quam dolor vero placeat suscipit dignissimos quisquam
+      aliquid rerum ratione. Reprehenderit adipisci voluptatibus possimus, optio sed dolores molestiae
+      laboriosam enim fugiat. Optio magni nisi a distinctio ratione?
+    </p>
+    <h2>3. create paragraph with darker background-color</h2>
+    <p class="p-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a rem ut laudantium modi quisquam
+      consequatur, nesciunt itaque fugit exercitationem iste non eligendi voluptas odit alias officiis
+      voluptate eum autem distinctio. Officiis iusto quam dolor vero placeat suscipit dignissimos quisquam
+      aliquid rerum ratione. Reprehenderit adipisci voluptatibus possimus, optio sed dolores molestiae
+      laboriosam enim fugiat. Optio magni nisi a distinctio ratione?
+    </p>
+    <hr />
+    <hr />
+    <!--  ایجاد لینک -->
+    <h2>4. create a link tag which go to "kanoon.ir" and make it bigger font</h2>
+    <a class="a-link" href="https://kanoon.ir"> go to kanoon</a>
+    <!-- تگ های زیر برای ایچاد فاصله عمودی استفاده شده  -->
+    <br class="space" />
+    <!-- تگ ایجاد خط افقی -->
+    <hr />
+    <hr />
+    <br class="space" />
+    <!-- دکمه ها -->
+    <button class="btn-1">خرید</button>
+    <button class="btn-2">سبد خرید</button>
+    <button class="btn-3">خرید</button>
+    <button class="btn-4">+</button>
+    <button class="btn-5">-</button>
+    <!-- آخرین دکمه -->
+
+    <br class="space" />
+    <br class="space" />
+    <hr />
+    <hr />
+    <br class="space" />
+    <h2>5. create ordered and unordered list with 5 items some items should have different colors</h2>
+    <!-- لیست ها -->
+    <ol>
+      <li>item</li>
+      <li class="item-red">item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    <br class="space" />
+    <hr />
+    <ul>
+      <li>item</li>
+      <li>item</li>
+      <li class="item-purple">item</li>
+      <li>item</li>
+      <li>item</li>
+    </ul>
+    <br class="space" />
+    <hr />
+    <hr />
+    <br class="space" />
+    <!-- عکس های پروفایل -->
+    <!-- عکس هاباید در فولدر شما دانلود شده باشد -->
+    <img class="avatar" src="images/profiles/profile1.jpeg" />
+    <img class="avatar has-border" src="images/profiles/profile2.jpeg" />
+    <img class="avatar" src="images/profiles/profile3.jpeg" />
+
+    <br class="space" />
+    <hr />
+    <br class="space" />
+    <!-- پایان  -->
+  </body>
+</html>
