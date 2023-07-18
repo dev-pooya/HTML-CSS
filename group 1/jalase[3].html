@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jalase 3</title>
+    <style>
+      /* display  block => تمام عرض که در اختبار دارد، اشغال میکند */
+      /* display  inline =>  خط چدید تولید نمیکند و عرض و ارتفاع نمیگیرد */
+      /* display  inline-block =>  عرض و ارتفاع میپذیرد و در کنار المان های دیگر قرار میگیرد */
+      a {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        width: 270px;
+        height: 50px;
+      }
+      .p-2 {
+        background-color: bisque;
+        border-width: 2px; /* عرض خط حاشیه*/
+        border-color: green; /* رنگ خط حاشیه */
+        border-style: solid; /* نوع خط حاشیه  dotted - dashed - solid  */
+        padding-top: 50px; /* فاصله داخلی بین حاشیه و محتوا */
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin-left: 50px; /* فاصله خارجی  بیرون از حاشیه */
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-family: Arial; /* خانواده فونت را مشخص میکند*/
+        font-size: 18px; /* اندازه فونت*/
+        font-weight: bold; /* ضخامت فونت*/
+        font-style: italic; /* کج و راست بودن متن*/
+        text-align: left; /* تراز کردن متن*/
+        word-spacing: 5px; /* فاصله بین کلمات */
+        letter-spacing: 8px; /* فاصله بین حروفات*/
+        line-height: 25px; /* ارتفاع خط*/
+      }
+      .btn-1 {
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 25px;
+        opacity: 0.8; /* شفافیت کل المنت را نعیین میکند*/
+        transition: all 1s; /* تمامی تغییرات در مدت ۱ ثانیه انجام میشود*/
+      }
+      /* :hover => زمانی انتخاب میکند که ماوس روی المان باشد */
+      .btn-1:hover {
+        opacity: 1;
+        background-color: green;
+        padding: 15px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>جلسه ۳ | مدل جعبه ای</p>
+
+    <button>click here</button>
+    <a href="google.com">go to google .com for more information </a>
+
+    <p class="p-2">
+      Lorem,mpeditnt maxime laudantium impedit ipsa facere qui sed rem illum earum. Voluptates quaerat veniam
+      perferendis, suscipit magni beatae eligendi illo labore neque enim laborum eaque asperiores natus
+      explicabo inventore recusandae eveniet aspernatur. Ipsa placeat accusantium, aliquam autem inventore non
+      nisi? Tenetur nemo commodi, hic odit maxime voluptatibus vel aliquid quas pariatur est? Voluptates
+      nostrum exercitationem, quibusdam dolorem odit dicta!
+    </p>
+    <hr />
+    <button class="btn-1">click here</button>
+  </body>
+</html>
