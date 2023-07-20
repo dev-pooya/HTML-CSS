@@ -1,0 +1,72 @@
+/*  "*" universal selector => همه تگ ها را انتخاب میکند */
+* {
+  box-sizing: border-box; /*  عرض و ارتفاع جعبه ها از مجموع حاشیه و فاصله داخلی محاسبه میشود */
+}
+.p-1 {
+  padding: 20px; /* فاصله داخلی از هر 4 جهت */
+  color: red;
+}
+.outer-box {
+  width: 816px;
+  height: 200px;
+  background-color: rgb(136, 171, 236);
+  margin: 10px auto; /* مارجین اتوماتیک در چپ راست فضای خالی را در اطراف جعبه تقسیم میکند */
+}
+body {
+  margin: 0;
+}
+.inner-box {
+  display: inline-block; /* در کنار هم قرار میگیرند و عرض و ارتفاع میپذیرد*/
+  width: 200px;
+  height: 100px;
+  padding: 10px 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  background-color: red;
+}
+.box-2 {
+  /*  "," طیف رنگی با زاویه 101 درجه | جدا کننده رنگ ها   */
+  background: linear-gradient(
+    101deg,
+    rgba(42, 231, 238, 1) 1%,
+    rgba(62, 121, 225, 1) 42%,
+    rgba(144, 3, 63, 1) 100%
+  );
+  background-size: cover; /* اگر پس زمینه تصویر باشد کل جعبه را پوشش میدهد */
+  background-repeat: no-repeat; /* اگر پس زمینه کوچک باشد و جعبه بزرگ تکرار پس زمینه را کنترل میکند */
+  background-clip: text; /* پس زمینه فقط پشت متن دیده میشود نه کل جعبه */
+  -webkit-background-clip: text; /* برای پشتیبانی از ویژگی قبلی در کروم */
+  color: transparent; /* برای دیده شدن پس زمینه پشت متن باید رنگ متن شفاف باشد */
+  padding: 25px;
+  height: 200px;
+  font-size: 25px;
+}
+.btn-1 {
+  background: linear-gradient(
+    101deg,
+    rgba(42, 231, 238, 1) 1%,
+    rgba(62, 121, 225, 1) 42%,
+    rgba(144, 3, 63, 1) 100%
+  );
+  margin-top: 20px;
+  border: none;
+  width: 180px;
+  height: 40px;
+  color: white;
+}
+.shadow {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin: 10px auto;
+  max-width: 50%; /* حداکثر عرض پنجاه درصد */
+  margin-bottom: 50px;
+  /* سایه جعیه */
+  box-shadow: 0 0 5px 4px #0000005f;
+  /* مقدار اول در جهت افقی سایه را حرکت میدهد. مثبت جهت راست و منفی جهت چپ */
+  /* مقدار دوم در حهت عمودی سایه را حرکت میدهد . مثبت جهت پایین و منفی جهت بالا */
+  /* مقدار سوم میزان تار شدگی سایه  */
+  /* مقدار چهارم  میزان بزرگی و پخش شدگی سایه  */
+  /* مقدار پنجم رنگ سایه که بهتر است تا حد زیادی شفاف باشد */
+}

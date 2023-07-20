@@ -1,0 +1,64 @@
+/*  "*" universal selector => همه تگ ها را انتخاب میکند */
+* {
+  box-sizing: border-box; /*  عرض و ارتفاع جعبه ها از مجموع حاشیه و فاصله داخلی محاسبه میشود */
+}
+
+p {
+  color: red;
+  background-color: green;
+  padding: 20px; /* فاصله داخلی از هر 4 جهت */
+}
+.outer-box {
+  background-color: beige;
+  width: 816px;
+  height: 200px;
+  margin: 0 auto; /* مارجین اتوماتیک در چپ راست فضای خالی را در اطراف جعبه تقسیم میکند */
+}
+.inner-box {
+  display: inline-block; /* در کنار هم قرار میگیرند و عرض و ارتفاع میپذیرد*/
+  background-color: red;
+  width: 200px;
+  padding: 0 10px;
+  margin: 0;
+  height: 100px;
+  border: 5px solid green;
+}
+.bg-1 {
+  width: 80%;
+  min-height: 100px;
+  margin: 0 auto;
+  font-size: 20px;
+
+  /*  "," طیف رنگی با زاویه 101 درجه | جدا کننده رنگ ها   */
+
+  background: linear-gradient(
+    101deg,
+    rgba(42, 231, 238, 1) 1%,
+    rgba(62, 121, 225, 1) 42%,
+    rgba(144, 3, 63, 1) 100%
+  );
+
+  background-clip: text; /* پس زمینه فقط پشت متن دیده میشود نه کل جعبه */
+  -webkit-background-clip: text; /* برای پشتیبانی از ویژگی قبلی در کروم */
+  color: transparent; /* برای دیده شدن پس زمینه پشت متن باید رنگ متن شفاف باشد */
+}
+
+.shadow {
+  max-width: 800px; /* حد اکثر عرض 800 پیکسل*/
+  margin: 0 auto;
+  padding: 20px;
+  text-transform: capitalize; /* تمامی کلمات با حروف اول بزرگ*/
+  letter-spacing: 4px; /* فاصله بین حروفات*/
+  word-spacing: 5px; /* فاصله بین کلمات */
+  line-height: 1.8; /* ارتفاع خط */
+  font-size: 18px;
+  text-decoration: none; /* خط زیر کلمات از بین میرود */
+  border-radius: 20px;
+  /* سایه جعیه */
+  box-shadow: 10px 10px 5px 4px #62616154;
+  /* مقدار اول در جهت افقی سایه را حرکت میدهد. مثبت جهت راست و منفی جهت چپ */
+  /* مقدار دوم در حهت عمودی سایه را حرکت میدهد . مثبت جهت پایین و منفی جهت بالا */
+  /* مقدار سوم میزان تار شدگی سایه  */
+  /* مقدار چهارم  میزان بزرگی و پخش شدگی سایه  */
+  /* مقدار پنجم رنگ سایه که بهتر است تا حد زیادی شفاف باشد */
+}
