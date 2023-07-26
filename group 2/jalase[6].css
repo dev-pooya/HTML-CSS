@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+/* باکس خارجی  => grid container*/
+.outer-box {
+  width: 1020px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid red;
+  display: grid; /* برای ایجاد ساختار های شبکه ای */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* تعداد پنج ستون با عرض های یکسان*/
+  column-gap: 10px; /* فاصله ستون ها*/
+  row-gap: 10px; /* فاصله سطر ها*/
+}
+/* لاکس های داخلی  => grid item */
+.inner-box {
+  border: 1px dotted rgb(249, 132, 132);
+  background-color: beige;
+  padding: 10px;
+}
+/* باکس داخلی فرزند دوم 2*/
+.inner-box:nth-child(2) {
+  grid-column-start: 2; /* شماره خط شروع ستون  */
+  grid-column-end: 4; /*  شماره خط پایان ستون */
+  background-color: lightcoral;
+}
+
+/* باکس داخلی فرزند اول ۱*/
+.inner-box:nth-child(1) {
+  grid-row-start: 1; /*  شماره خط شروع سطر */
+  grid-row-end: 5; /*  شماره خط پایان سطر */
+  background-color: lightgreen;
+}
