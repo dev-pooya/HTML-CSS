@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+body {
+  padding: 5px 25px; /* فاصله داخلی برای کل بدنه */
+}
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 1px solid darkgray; /*  حاشیه پایین */
+  padding-bottom: 10px;
+  margin: 40px 0;
+}
+/*  تمامی گرید آیتم ها (باکس های داخلی) انتخاب میکند برای دیده شدن بهتر */
+.grid-item {
+  padding: 15px;
+  text-align: center;
+  border: 1px dotted rgb(241, 89, 19);
+  background-color: beige;
+}
+
+/* گرید باکس ۱ */
+.grid-box-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* چهار ستون برابر */
+  column-gap: 10px; /* فاصله ستون ها از هم */
+  row-gap: 10px; /*  فاصله سطر ها از هم */
+}
+
+/* گرید باکس ۲ */
+.grid-box-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* سه ستون برابر*/
+  column-gap: 10px;
+  row-gap: 10px;
+}
+/* باکس دوم در داخل گرید باکس ۲*/
+.grid-box-2 .box-2 {
+  background-color: lightsalmon;
+  grid-column-start: 2; /* شماره خط شروع کننده ستون برای این آیتم */
+  grid-column-end: 4; /* شماره خط ستون پایانی برای این آیتم */
+  /* این استایل ها باعث میشود که باکس شماره ۲ ، دو ستون را اشغال کند*/
+}
+.grid-box-2 .box-6 {
+  background-color: lightsalmon;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid-box-2 .box-10 {
+  background-color: lightsalmon;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-box-2 .box-12 {
+  background-color: lightsalmon;
+  grid-column-start: 1; /* از خط اول */
+  grid-column-end: 4; /* تا خط ۴ (آخر) */
+  /* این استایل ها باعث میشود باکس شماره ۱۲ ، سه ستون را اشفال کند  */
+}
+
+/* گرید باکس ۳ */
+.grid-box-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* ۶ ستون برابر */
+  column-gap: 10px;
+  row-gap: 10px;
+}
+/* باکس اول در داخل گرید باکس ۳ را انتخاب میکند */
+.grid-box-3 .box-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid-box-3 .box-2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.grid-box-3 .box-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-box-3 .box-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.grid-box-3 .box-5 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+/* گرید باکس 4 */
+.grid-box-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*۱۲ ستون*/
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.grid-box-4 .box-13 {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.grid-box-4 .box-14 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.grid-box-4 .box-15 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+.grid-box-4 .box-16 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.grid-box-4 .box-17 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.grid-box-4 .box-18 {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.grid-box-4 .box-19 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid-box-4 .box-20 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.grid-box-4 .box-21 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+.grid-box-4 .box-22 {
+  grid-column-start: 10;
+  grid-column-end: 13;
+}
+.grid-box-4 .box-23 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-box-4 .box-24 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.grid-box-4 .box-25 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.grid-box-4 .box-26 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+.grid-box-4 .box-27 {
+  grid-column-start: 9;
+  grid-column-end: 11;
+}
+.grid-box-4 .box-28 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
+
+/* گرید باکس 5 */
+
+.grid-box-5 {
+  width: 700px; /* عرض مشخص*/
+  margin: 40px auto; /*مارجین چپ و راست اتوماتیک برای وسط چین */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*سه ستون*/
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.grid-box-5 .box-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-box-5 .box-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1; /* شماره خط شروع کننده سطر برای این آیتم */
+  grid-row-end: 3; /* شماره خط پایانی سطر برای این آیتم */
+  /*  سطر اول و دوم را اشغال میکند */
+}
+.grid-box-5 .box-6 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
