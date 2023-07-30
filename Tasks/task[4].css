@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+body {
+  margin: 0;
+  padding: 10px 50px;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(75, 5, 141);
+}
+.products-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.product {
+  box-shadow: 0 5px 4px 1px #00000038;
+  border-radius: 15px;
+  overflow: hidden; /* سر ریز مخفی برای دیده نشدن گوشه های عکس */
+}
+.product img {
+  display: block;
+  width: 100%; /* عرض تصویر 100 درصد عرض ستون خود*/
+}
+.product h3 {
+  text-align: center;
+}
+.product .price {
+  text-align: center;
+  color: rgb(97, 97, 97);
+  margin: 0;
+}
+.btn-primary {
+  display: block;
+  color: #5b42f3;
+  padding: 12px 30px;
+  margin: 15px auto;
+  border-radius: 25px;
+  border: 2px solid #5b42f3;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  cursor: pointer; /* شکل ماوس  */
+}
+/* زمانی که کارت محصول هاور شود دکمه داخلی انتخاب میشود */
+.product:hover .btn-primary {
+  box-shadow: 0 0 0 8px #5b42f320;
+  background-color: #5b42f3;
+  color: white;
+  border-color: transparent;
+}
