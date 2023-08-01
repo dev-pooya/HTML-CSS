@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.grid-container {
+  padding: 10px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  /* 
+  justify-content: start, center, end, space-between, space-around, space-evenly
+  کل محتوا در جهت چپ و راست تراز میکند
+  justify-items: start, end, center, stretch
+  هر کدام از آیتم ها در ستون خود از  تراز میشود
+  align-content: start, center, end, space-between, space-around, space-evenly
+  کل محتوا در جهت بالا و پایین تراز میشود
+  align-items: start, center, end, stretch
+  هر کدام از آیتم ها در سطر خود تراز میشود
+  */
+}
+
+.grid-item {
+  padding: 15px;
+  text-align: center;
+  background-color: beige;
+  border: 1px dotted rgb(255, 156, 156);
+}
+
+.grid-box-5 {
+  width: 700px; /* عرض مشخص*/
+  margin: 40px auto; /*مارجین چپ و راست اتوماتیک برای وسط چین */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*سه ستون*/
+  row-gap: 10px; /* فاصله سطر ها */
+  column-gap: 10px; /* فاصله ستون ها از هم */
+}
+
+.grid-box-5 .box-1 {
+  grid-column: span 2; /* ۲ ستون اشغال میکند */
+}
+.grid-box-5 .box-2 {
+  grid-row: span 2; /* ۲ سطر اشغال میکند */
+}
+.grid-box-5 .box-3 {
+  grid-row: span 2; /* ۲ سطر اشغال میکند */
+}
+.grid-box-5 .box-8 {
+  grid-column: span 2; /* ۲ ستون اشغال میکند */
+}
+
+h2 {
+  text-align: center;
+}
