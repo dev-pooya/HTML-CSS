@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.flex-container {
+  margin: 20px auto;
+  border: 1px solid red;
+  padding: 10px;
+  max-width: 600px;
+  display: flex; /* منعطف */
+  flex-direction: row; /* مسیر قرار گیری آیتم ها ستونی یا سطری */
+  flex-wrap: wrap; /* از سر ریز شدن جلوگیری میکند و محتوا داخل جعبه بسته بندی میشود  */
+  align-items: start; /* تراز کردن از بالا و پایین */
+  justify-content: center; /* تراز کردن از چپ و راست */
+}
+.flex-item {
+  background-color: beige;
+  border: 1px dotted green;
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
+.flex-item:nth-child(3) {
+  height: 100px;
+  align-self: flex-start; /* تراز کردن این آیتم فقط */
+}
