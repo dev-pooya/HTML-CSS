@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./jalase[9].css" />
+    <title>jalase 9</title>
+  </head>
+  <body>
+    <form action="jalase[3].html" method="get">
+      <label> name: </label>
+      <!-- required => این فیلد الزامی است -->
+      <input type="text" placeholder="enter your name" required />
+      <br />
+      <label> email: </label>
+      <!-- placeholder => نگهدارنده مکان -->
+      <input type="email" placeholder="example@domain.com" />
+      <br />
+      <label> post code: </label>
+      <input type="number" placeholder="555" min="5" max="10000" />
+      <br />
+      <label> phone number: </label>
+      <input type="tel" placeholder="+98 914 xxx xxx" />
+      <br />
+      <label> choose color: </label>
+      <input type="color" />
+      <br />
+      <label> profile image: </label>
+      <input type="file" />
+      <br />
+      <label> birthday: </label>
+      <input type="date" />
+      <br />
+      <h2>add some of your favorite foods</h2>
+      <input type="checkbox" />
+      <label> apple </label>
+
+      <input type="checkbox" />
+      <label> pineapple </label>
+      <input type="checkbox" checked />
+      <label> banana </label>
+      <br />
+      <h4>choose your gender:</h4>
+      <!-- در رادیو باتن ها ، نام ها باید یکسان باشد -->
+      <input type="radio" name="gender" checked />
+      <label> male </label>
+      <input type="radio" name="gender" />
+      <label> female </label>
+      <h4>are you married?</h4>
+      <input type="radio" name="married" />
+      <label> single </label>
+      <input type="radio" name="married" />
+      <label> married </label>
+      <br />
+      <h4>where do you live?</h4>
+      <select>
+        <option value="">maku</option>
+        <option value="">tehran</option>
+        <option value="">tabriz</option>
+        <option value="">mashad</option>
+      </select>
+      <br />
+      <textarea rows="8" placeholder="your message ..."></textarea>
+      <br />
+      <button type="submit">send form</button>
+      <button type="reset">reset form</button>
+    </form>
+  </body>
+</html>
