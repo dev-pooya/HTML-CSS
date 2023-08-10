@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 20px;
+}
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid purple;
+}
+.box {
+  background-color: red;
+  padding: 20px;
+  color: white;
+}
+
+.example-1 .box:nth-child(2) {
+  background-color: blue;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+.example-2 .box:nth-child(3) {
+  background-color: blue;
+  position: relative;
+  bottom: 20px;
+  left: 15px;
+}
+
+.example-3 .box:nth-child(2) {
+  background-color: green;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+}
+
+.example-4 {
+  position: relative;
+  padding: 40px;
+}
+.example-4 .box:nth-child(2) {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+.example-4 .box:nth-child(4) {
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  right: 10px;
+}
+
+/* form section */
+
+.logo {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: -125px;
+  left: 125px;
+}
+.form-container {
+  max-width: 500px;
+  margin: 180px auto;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 5px 3px #0000003a;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 50px;
+}
+input {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(216, 216, 216);
+  transition: 0.3s;
+}
+input:focus {
+  outline: 1px solid #a09f9f;
+  background-color: #eeeeee;
+  color: black;
+}
+input:invalid {
+  outline-color: red;
+}
+input:valid {
+  outline-color: green;
+}
+label {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+button {
+  padding: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: blue;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group input {
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+}
+.input-group img {
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  width: 25px;
+  top: 9px;
+  left: 13px;
+  padding-right: 3px;
+  border-right: 1px solid rgba(0, 0, 0, 0.322);
+}
