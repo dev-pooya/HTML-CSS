@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+}
+.header {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  background-color: darkcyan;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+  position: static;
+}
+.sub-menu-1 {
+  position: absolute;
+  background-color: darkcyan;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.sub-menu-2 {
+  position: absolute;
+  background-color: darkcyan;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+li {
+  list-style: none;
+  padding: 20px 15px;
+  color: #fff;
+  width: 120px;
+  position: relative;
+}
+
+li:hover > ul {
+  display: block;
+}
+li:hover {
+  background-color: aquamarine;
+}
