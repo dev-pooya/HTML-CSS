@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 76</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="68.8670602%" y1="25.7421875%" x2="68.8670602%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F35D73" offset="0%"></stop>
+            <stop stop-color="#D11149" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0 L36,0 C38.209139,-4.05812251e-16 40,1.790861 40,4 L40,36 C40,38.209139 38.209139,40 36,40 L4,40 C1.790861,40 2.705415e-16,38.209139 0,36 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-2"></path>
+        <path d="M24.6490061,27.3133168 C23.3084319,26.9475101 22.1900948,25.8874527 21.8034097,24.4314746 L19.7152566,16.5693949 L19.5038988,15.7736566 L19.258842,16.6962678 L17.9914932,21.4473534 C17.4148811,23.6184599 15.2113833,24.9092054 13.0700801,24.3304089 L13.0730787,24.3191176 C11.6571187,23.9996335 10.4591825,22.9121798 10.0561334,21.3945868 L10.0441324,21.401492 L9,17.4704522 C11.1414149,16.891543 13.3449127,18.1822885 13.9215248,20.3532823 L13.9335258,20.3464897 L14.0308201,20.7128411 L14.1141008,20.3992564 L15.3814496,15.6480581 C15.8109381,14.030997 17.1430212,12.9022969 18.6797476,12.6708209 L18.6711243,12.638355 C20.8125391,12.0594459 23.0160369,13.3501914 23.592649,15.5211852 L25.6808021,23.3833775 L25.6868035,23.405975 L26.3198545,21.0583364 C26.8964666,18.8873426 29.0999644,17.5965971 31.2413793,18.1755063 L30.1972469,22.1065461 L29.557572,24.4786363 C28.9809599,26.6497427 26.7774621,27.9404882 24.6361589,27.3616917 L24.6490061,27.3133168 Z" id="path-4"></path>
+        <filter x="-15.7%" y="-16.7%" width="131.5%" height="146.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0777287138 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-76">
+            <g id="Group-27">
+                <g id="Screen-Shot-2018-06-01-at-17.54.17">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

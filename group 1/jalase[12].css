@@ -1,0 +1,37 @@
+/* fonts */
+
+@font-face {
+  font-family: "myfont";
+  font-style: norma;
+  font-weight: 400;
+  src: url("./../fonts/woff/IRANSansWeb_FaNum.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+}
+p {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+p:nth-child(2) {
+  font-family: arial;
+}
+
+p:nth-child(3) {
+  font-family: Impact;
+}
+
+p:nth-child(4) {
+  font-family: "myfont";
+  text-align: right;
+  line-height: 1.8;
+}
