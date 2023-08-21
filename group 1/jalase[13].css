@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 10px auto;
+}
+ul {
+  list-style: none;
+}
+.nav {
+  padding: 15px;
+  width: 250px;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  background-color: blueviolet;
+}
+.show {
+  left: 0;
+}
+
+.nav li {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* کد های زیر زمانی اعمال میشود که حداقل عرض صفحه 567 پیکسل باشد */
+/* اسکرین های بزرگتر از موبایل */
+
+@media (min-width: 567px) {
+  .nav {
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background-color: white;
+  }
+  .nav li {
+    margin: 0;
+    background-color: blueviolet;
+    color: #fff;
+  }
+  .btn {
+    display: none;
+  }
+}
