@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  direction: rtl;
+  font-family: "iran-sans";
+  font-size: 16px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  font-family: "iran-sans";
+
+  background-color: #f1f1f1;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 20px;
+  min-height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 #44444431;
+}
+.header .logo img {
+  display: block;
+  width: 70%;
+}
+.nav {
+  display: none;
+}
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: white;
+  box-shadow: 0 0 5px 3px #00000008;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  right: -2px;
+  bottom: 50%;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  right: 50%;
+  bottom: -2px;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.card:hover::after {
+  right: -2px;
+  top: -2px;
+}
+.card:hover::before {
+  left: -2px;
+  bottom: -2px;
+}
+.mobile-footer {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 12px 0;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px 0 #44444431;
+}
+.icon img {
+  display: block;
+  width: 19px;
+}
+
+/* desktop view */
+@media (min-width: 700px) {
+  .mobile-footer {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  .nav li {
+    font-size: 0.9rem;
+    color: #000000e7;
+    position: relative;
+  }
+  .nav li:after {
+    content: "";
+    display: inline-block;
+    background-color: #00000070;
+    width: 2px;
+    height: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+    border-radius: 25px;
+  }
+  .nav li:last-child::after {
+    display: none;
+  }
+}

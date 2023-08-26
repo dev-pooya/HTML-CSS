@@ -18,7 +18,12 @@
         <li><a href="#">works</a></li>
         <li><a href="#">contact</a></li>
       </ul>
-      <button class="btn-primary">Let's talk</button>
+      <button class="btn-primary btn-contact">Let's talk</button>
+      <button class="btn-burger">
+        <hr />
+        <hr />
+        <hr />
+      </button>
     </div>
     <!-- top section -->
     <div class="top-section container">
@@ -198,5 +203,12 @@
 
       <p class="copyright">&copy; All rights reserved by <span>CreativePen</span></p>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".btn-burger");
+      menuBtn.addEventListener("click", (e) => {
+        document.querySelector(".nav-menu").classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
