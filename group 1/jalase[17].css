@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+.img img {
+  width: 600px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.img:hover img {
+  filter: blur(2px);
+  filter: contrast(1.9);
+  filter: brightness(0.7);
+  filter: grayscale(0.5);
+  filter: sepia(1);
+  filter: saturate(2);
+  filter: hue-rotate(180deg);
+  filter: opacity(0.8);
+  filter: invert(100%);
+}
+
+input[type="email"] {
+  border: 2px solid red;
+}
+h1[class^="ani"] {
+  color: green !important;
+}
