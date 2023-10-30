@@ -1,0 +1,43 @@
+.inner-box {
+  padding: 10px;
+  border: 1px dotted red;
+}
+.outer-box {
+  border: 2px solid blue;
+  padding: 15px;
+  margin: auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  /* justify-content: start;
+  justify-items: center;
+
+  align-content: start;
+  align-items: center; */
+}
+
+.box-1 {
+  background-color: lightcoral;
+  grid-column: span 2;
+}
+/* .inner-box:nth-child(4) {
+  background-color: lightgray;
+  grid-column-start: 2;
+  grid-column-end: 4;
+} */
+
+.inner-box:nth-child(8) {
+  background-color: lightblue;
+  /* grid-row: 4 / 6;
+  grid-column: 2 / 3; */
+  grid-row: span 2; /* آیتم شماره ۸ دو ستون اشغال میکند*/
+}
+.inner-box:nth-child(4) {
+  background-color: pink;
+  grid-column: span 2;
+  grid-row: span 3; /* آیتم شماره ۴ سه سطر اشغال میکند*/
+}
+p::selection {
+  background-color: lightgreen;
+}
