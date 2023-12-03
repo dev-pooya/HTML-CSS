@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+div.content {
+  font-size: 20px;
+  padding: 20px;
+  color: red;
+}
+
+div.content {
+  color: lightcoral;
+  display: block;
+}
+
+.content div .link {
+  background-color: pink;
+}
+
+ol ul {
+  list-style: none;
+  padding: 20px;
+  font-size: 30px;
+}
+li {
+  background-color: green;
+  margin: 10px;
+  color: white;
+}
+li:has(+ li:hover) {
+  background-color: aquamarine;
+}
+
+a,
+div,
+a.link {
+  color: green;
+}
+
+a.link {
+  color: aqua;
+}
+
+body {
+  padding: 15px;
+}
+.list {
+  padding: 20px;
+  border: 2px solid brown;
+  list-style: none;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.list div {
+  border: 1px dotted blue;
+  padding: 10px;
+  font-size: 18px;
+  flex-shrink: 0.2;
+}
+.target {
+  flex-shrink: 5 !important;
+}
+
+p {
+  color: black;
+  padding: 20px;
+  height: 300px;
+  border: 2px solid red;
+  margin: 20px;
+  font-size: 25px;
+  overflow: visible;
+}

@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 50px;
+}
+.outer {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(160, 217, 252);
+}
+.inner {
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: blue;
+  transform: translateX(0);
+  animation-name: move;
+  animation-duration: 5s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+    background-color: blue;
+  }
+
+  25% {
+    transform: translateX(100%);
+    background-color: green;
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateX(0) translateY(100%);
+    background-color: green;
+    border-radius: 25px;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: blue;
+    border-radius: 0;
+  }
+}
+
+.inner:hover {
+  animation-play-state: paused;
+}
+
+.container {
+  position: relative;
+
+  display: flex;
+  gap: 5px;
+}
+.dot {
+  --angle: 0;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  /* position: absolute;
+    transform: rotate(var(--angle)) translateX(200px) scale(1);
+    animation-name: cycle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+
+  animation-name: updown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.dot:nth-child(2) {
+  --angle: 36deg;
+  animation-delay: 100ms;
+}
+.dot:nth-child(3) {
+  --angle: calc(2 * 36deg);
+  animation-delay: 200ms;
+}
+.dot:nth-child(4) {
+  --angle: calc(3 * 36deg);
+  animation-delay: 300ms;
+}
+.dot:nth-child(5) {
+  --angle: calc(4 * 36deg);
+  animation-delay: 400ms;
+}
+.dot:nth-child(6) {
+  --angle: calc(5 * 36deg);
+  animation-delay: 500ms;
+}
+.dot:nth-child(7) {
+  --angle: calc(6 * 36deg);
+  animation-delay: 600ms;
+}
+.dot:nth-child(8) {
+  --angle: calc(7 * 36deg);
+  animation-delay: 700ms;
+}
+.dot:nth-child(9) {
+  --angle: calc(8 * 36deg);
+  animation-delay: 800ms;
+}
+.dot:nth-child(10) {
+  --angle: calc(9 * 36deg);
+  animation-delay: 900ms;
+}
+
+@keyframes cycle {
+  0% {
+    transform: rotate(var(--angle)) translateX(200px) scale(1);
+  }
+  100% {
+    transform: rotate(var(--angle)) translateX(200px) scale(0);
+  }
+}
+
+@keyframes updown {
+  to {
+    transform: translateY(-100px) scale(1.02);
+    background-color: lightcoral;
+    border-radius: 5px;
+  }
+}
+svg {
+  border: 1px solid red;
+}

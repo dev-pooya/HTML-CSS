@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./jalase09.css" />
+    <title>jalase 9</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav">
+        <li>
+          home
+          <ul class="submenu">
+            <li>
+              service 1
+              <ul class="sub-submenu">
+                <li>sub 10</li>
+                <li>sub 20</li>
+                <li>sub 30</li>
+                <li>sub 40</li>
+              </ul>
+            </li>
+            <li>
+              service 2
+              <ul class="sub-submenu">
+                <li>sub 1</li>
+                <li>sub 2</li>
+                <li>sub 3</li>
+                <li>sub 4</li>
+              </ul>
+            </li>
+            <li>
+              service 3
+              <ul class="sub-submenu">
+                <li>sub das</li>
+                <li>sub sda</li>
+                <li>sub das</li>
+                <li>sub sda</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          services
+
+          <ul class="submenu">
+            <li>
+              service 1
+              <ul class="sub-submenu">
+                <li>sub 10</li>
+                <li>sub 20</li>
+                <li>sub 30</li>
+                <li>sub 40</li>
+              </ul>
+            </li>
+            <li>
+              service 2
+              <ul class="sub-submenu">
+                <li>sub 1</li>
+                <li>sub 2</li>
+                <li>sub 3</li>
+                <li>sub 4</li>
+              </ul>
+            </li>
+            <li>
+              service 3
+              <ul class="sub-submenu">
+                <li>sub das</li>
+                <li>sub sda</li>
+                <li>sub das</li>
+                <li>sub sda</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          contact
+          <ul class="submenu">
+            <li>
+              service 1
+              <ul class="sub-submenu">
+                <li>sub 10</li>
+                <li>sub 20</li>
+                <li>sub 30</li>
+                <li>sub 40</li>
+              </ul>
+            </li>
+            <li>
+              service 2
+              <ul class="sub-submenu">
+                <li>sub 1</li>
+                <li>sub 2</li>
+                <li>sub 3</li>
+                <li>sub 4</li>
+              </ul>
+            </li>
+            <li>
+              service 3
+              <ul class="sub-submenu">
+                <li>sub das</li>
+                <li>sub sda</li>
+                <li>sub das</li>
+                <li>sub sda</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          about
+          <ul class="submenu">
+            <li>
+              service 1
+              <ul class="sub-submenu">
+                <li>sub 10</li>
+                <li>sub 20</li>
+                <li>sub 30</li>
+                <li>sub 40</li>
+              </ul>
+            </li>
+            <li>
+              service 2
+              <ul class="sub-submenu">
+                <li>sub 1</li>
+                <li>sub 2</li>
+                <li>sub 3</li>
+                <li>sub 4</li>
+              </ul>
+            </li>
+            <li>
+              service 3
+              <ul class="sub-submenu">
+                <li>sub das</li>
+                <li>sub sda</li>
+                <li>sub das</li>
+                <li>sub sda</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="container form-box">
+      <form action="">
+        <img src="./images/user-286.png" alt="" width="100" class="logo" />
+        <div class="input-group">
+          <input type="text" placeholder="name" />
+          <img src="./images/icons/person-circle.svg" width="35" class="icon" />
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="password" id="input" />
+          <img src="./images/icons/eye-slash-fill.svg" width="35" class="icon" id="icon" />
+        </div>
+      </form>
+    </div>
+    <script>
+      const input = document.querySelector("#input");
+      const btn = document.querySelector("#icon");
+      btn.addEventListener("click", (e) => {
+        if (input.getAttribute("type") === "password") {
+          input.setAttribute("type", "text");
+        } else {
+          input.setAttribute("type", "password");
+        }
+      });
+    </script>
+  </body>
+</html>

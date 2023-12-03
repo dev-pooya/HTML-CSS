@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jalase 7</title>
+    <link rel="stylesheet" href="jalase07.css" />
+  </head>
+  <body>
+    <a href="#top-section" class="btn-primary"> Read More</a>
+    <div class="flex">
+      <div class="item-1">item 1</div>
+      <div class="item-2">Lorem ipsum dolor sit.</div>
+      <div class="item-3">item 3</div>
+      <div class="item-4">Lorem ipsum dolor</div>
+    </div>
+
+    <form action="google.com/forms" method="POST">
+      <div>
+        <label> firstname</label>
+        <input type="text" placeholder="alex" name="firstname" />
+      </div>
+
+      <div>
+        <label> email</label>
+        <input type="email" placeholder="example@gmail.com" required name="email" />
+      </div>
+      <div>
+        <label> postcode</label>
+        <input type="tel" placeholder="584676114" name="postcode" maxlength="11" pattern="" />
+      </div>
+      <div>
+        <label>age </label>
+        <input type="number" min="5" name="age" />
+      </div>
+      <div>
+        <label>color </label>
+        <input type="color" />
+      </div>
+      <div>
+        <label>date </label>
+        <input
+          type="datetime-local"
+          min="2008-12-12 16:43:11"
+          max="2024-12-12 16:43:11"
+          value="2022-12-12 16:43:11"
+        />
+      </div>
+      <div>
+        <label>image </label>
+        <input type="file" accept="image/jpeg" />
+      </div>
+      <div>
+        <label>male </label>
+        <input type="radio" name="gender" value="male" />
+      </div>
+      <div>
+        <label>female </label>
+        <input type="radio" name="gender" value="female" />
+      </div>
+      <div>
+        <label>married </label>
+        <input type="checkbox" pattern="" name="ppp" checked />
+      </div>
+      <div>
+        <label>country </label>
+        <select name="country" id="">
+          <option value="iran">ایران</option>
+          <option value="turkey">ترکیه</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+          <option value="us">امریکا</option>
+        </select>
+      </div>
+      <div id="top-section"></div>
+      <textarea cols="30" rows="10"></textarea>
+      <button class="btn-primary" type="submit">send form</button>
+      <button class="btn-primary" type="reset">reset</button>
+    </form>
+  </body>
+</html>

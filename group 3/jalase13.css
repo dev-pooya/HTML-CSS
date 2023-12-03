@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 100px;
+  padding: 100px 0;
+}
+.flip-box {
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+.flipper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.2s;
+}
+.front,
+.back {
+  padding: 30px;
+  background-color: lightgoldenrodyellow;
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  backface-visibility: hidden;
+}
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: green;
+}
+
+.flip-box:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.container {
+  padding: 30px;
+}
+.parent {
+  width: 600px;
+  font-size: 25px;
+  background-color: lightcyan;
+  padding: 35px;
+  transform: rotateY(50deg);
+  transform-style: preserve-3d;
+}
+.child {
+  padding: 20px;
+  font-size: 25px;
+  background-color: darkblue;
+  color: white;
+  margin: 20px;
+  transform: rotateY(10deg) rotateZ(19deg);
+}
+.face {
+  background-color: lightseagreen;
+  padding: 20px;
+  text-align: center;
+  inset: 0;
+  font-size: 25px;
+  border: 1px dotted darkorchid;
+  position: absolute;
+  color: rgb(241, 1, 153);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+  transform: rotate3d(2, 2, 1, 40deg);
+}
+.face:nth-child(2) {
+  transform: translateX(50%) rotateY(90deg);
+}
+.face:nth-child(3) {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+.face:nth-child(4) {
+  transform: translateX(-50%) rotateY(-90deg);
+}
+.face:nth-child(5) {
+  transform: translateY(-50%) rotateX(90deg);
+}
+.face:nth-child(6) {
+  transform: translateY(50%) rotateX(-90deg);
+}
+.face:nth-child(1) {
+  transform: translateZ(100px);
+}
+.cube:hover {
+  transform: rotate3d(2, 2, 1, 90deg) scaleZ(1.6);
+}
+
+.outer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: lightblue;
+  width: 800px;
+  height: 100px;
+}
+.inner {
+  background-color: darkorange;
+  width: 10%;
+  height: 100%;
+  /* transition-property: width, background-color;
+    transition-duration: 5s, 2s;
+    transition-timing-function: cubic-bezier(0.54, 0.05, 0, 1.15), linear;
+    transition-delay: 0, 2s; */
+  transition: all 2s ease-in 200ms;
+}
+.outer:hover .inner {
+  width: 100%;
+  background-color: green;
+}
+button {
+  width: 100px;
+  height: 50px;
+  background-image: url("./images/backgrounds/bg-1.jpg");
+  background-size: cover;
+  display: block;
+}
